@@ -1,0 +1,68 @@
+---
+# Only these dashes mark it as a Jekyll file!
+# This front matter tells Jekyll to compile SCSS into CSS.
+---
+
+/* === Theme Color Variables === */
+$body-bg-color: #ccc8ff;         // periwinkle
+$header-title-color: #1a1aff;    // bright blue
+$header-bg-color: white;
+$footer-color: silver;
+$post-title-color: gray;
+$post-date-color: darkgray;
+$page-title-color: gray;
+
+/* === General Styles === */
+body {
+  background-color: $body-bg-color;
+  background-image: url("/assets/images/rainbow.png"), url("/assets/images/pot-o-gold.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom right;
+  background-size: contain, 150px;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Header and Navigation === */
+.header .container {
+  padding-top: 1em;
+}
+
+.navbar-light .navbar-brand {
+  color: $header-title-color;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: $header-bg-color;
+  border-bottom: 2px solid $header-title-color;
+}
+
+/* === Page Titles and Posts === */
+h1, h2, h3 {
+  color: $page-title-color;
+  font-family: "Poppins", sans-serif;
+}
+
+.post-title {
+  color: $post-title-color;
+  font-weight: bold;
+}
+
+.post-date {
+  color: $post-date-color;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/* === Footer === */
+.footer {
+  color: $footer-color;
+  text-align: center;
+  padding: 2em 0;
+  border-top: 1px solid $footer-color;
+  margin-top: 4em;
+}

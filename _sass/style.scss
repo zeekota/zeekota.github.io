@@ -1,0 +1,50 @@
+---
+# Only these dashes mark it as a Jekyll file!
+---
+
+/* === Theme Color Variables === */
+$body-bg-color: #ccc8ff;  // periwinkle
+$header-title-color: #1a1aff;  // blue
+$header-bg-color: white;
+$footer-color: silver;
+$post-title-color: gray;
+$post-date-color: darkgray;
+$page-title-color: gray;
+
+/* === General Styles === */
+body {
+  background-color: $body-bg-color;
+  background-image: url("/assets/images/rainbow.png"), url("/assets/images/pot-of-gold.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom right;
+  background-size: contain, 150px;
+  min-height: 100vh;
+}
+
+/* === Header and Navigation === */
+.header .container {
+  padding-top: 1em;
+}
+
+.navbar-light .navbar-brand {
+  color: $header-title-color;
+}
+
+.navbar {
+  background-color: $header-bg-color;
+}
+
+/* === Footer === */
+.footer {
+  margin-top: 4em;
+}
+
+.social-media-list li {
+  display: inline;
+  margin-right: 1em;
+}
+
+.svg-icon {
+  fill: $footer-color;
+  width: 1em;
+}
